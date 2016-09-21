@@ -1,0 +1,78 @@
+html> 
+<style> 
+body { 
+background-image: url("fof.png"); 
+background-repeat: no-repeat; 
+background-attachment: fixed; 
+background-size: 100%; 
+} 
+td { 
+background:white; 
+} 
+td.menu { 
+background:red; 
+} 
+td.menu:hover 
+{ 
+background:blue; 
+} 
+</style> 
+<script type="text/javascript"> 
+function show_pic(){ 
+var c1_elem = document.getElementById("c1"); 
+var c2_elem = document.getElementById("c2"); 
+var c3_elem = document.getElementById("c3"); 
+c1_elem.style.display='none'; 
+c2_elem.style.display = 'block'; 
+c3_elem.style.display = 'none'; 
+} 
+function show_text(){ 
+var c1_elem = document.getElementById("c1"); 
+var c2_elem = document.getElementById("c2"); 
+var c3_elem = document.getElementById("c3"); 
+c1_elem.style.display='block'; 
+c2_elem.style.display = 'none'; 
+c3_elem.style.display = 'none'; 
+} 
+function show_quiz() { 
+var c1_elem = document.getElementById("c1"); 
+var c2_elem = document.getElementById("c2"); 
+var c3_elem = document.getElementById("c3"); 
+c1_elem.style.display = 'none'; 
+c2_elem.style.display = 'none'; 
+c3_elem.style.display = 'block'; 
+} 
+</script> 
+<body text = "black" bgcolor = "blue"> 
+
+<h1 align="center"><b>финляндия</b></h1> 
+
+<table border="1" width="100%"> 
+
+<tr> 
+<td class="menu" id="m1" width="33%" onclick="show_text()"><b>Главная</b></td> 
+<td class="menu" id="m2" width="33%" onclick="show_pic()"><b>Карта</b></td> 
+<td class="menu" id="m3" width="33%" onclick="show_quiz()"><b>Викторина</b></td> 
+</tr> 
+
+<tr> 
+<td colspan="3"> 
+
+<div id="c1" style="display:none"> 
+Финля́ндия — государство на севере Европы.<br/>
+ Население по оценкам на 2015 год составляет около 5 479 800 человек,<br/>
+ территория — 338 430,53 км².<br/>
+ Занимает сто четырнадцатое место по количеству населения и<br/>
+ шестьдесят четвёртое по территории в мире.<br/> 
+<br/> 
+</div> 
+<div id="c3" style="display:none"> 
+now is not work:(</b> 
+</div> 
+<div id="c2"><img src="ppp..jpg"/></div> 
+
+</td> 
+</tr> 
+</table> 
+</body> 
+</html>
